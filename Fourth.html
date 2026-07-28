@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 100px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #meme{
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 22px;
+        }
+        img{
+            height: 200px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Click the Button!</h1>
+
+    <button onclick="showMeme()">Click Here</button>
+
+    <div id="meme">
+        <p><b>Teacher:</b> Any Questions?</p>
+        <p><b>Me:</b> Will this be in the exam? </p>
+        <p>Teacher be like:</p>
+        <img src="https://i.ytimg.com/vi/94gn9CTr7ig/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLAmT-oJgHbm3Q1Q4Mro9AioFVT0IQ&usqp=CCk">
+    </div>
+
+    <script>
+        function showMeme(){
+            document.getElementById("meme").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
